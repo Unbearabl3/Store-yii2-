@@ -3,7 +3,7 @@ main > .container {
 }
 
 .footer {
-    background-color: #f5f5f5;
+    background-color: rgb(33, 37, 41);
     font-size: .9em;
     height: 60px;
 }
@@ -83,6 +83,117 @@ a.desc:after {
     outline: none;
 }
 
+.indexTitle-title {
+    padding-bottom: 10px;
+    padding-top: 25px;
+    color: black;
+}
+
 .form-group {
     margin-bottom: 1rem;
 }
+
+
+  .fly-in-text {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide 5s linear ;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer a {
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.catalogPage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+}
+
+/* Изображение товара */
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Информация о товаре */
+.product-info {
+    padding: 16px;
+}
+
+/* Название товара */
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Цена товара */
+.product-price {
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    margin-bottom: 16px;
+}
+
+/* Кнопка "Добавить в корзину" */
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(33, 37, 41);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Заголовок и стилизация кнопки */
+.product-card-header {
+    background-color: rgb(33, 37, 41);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+
+  

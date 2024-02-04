@@ -5,49 +5,20 @@
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
-
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
+    <h3 class="indexTitle-title ">UnbearableShop</h3>
+    <div class="">
+        Добро пожаловать в UnbearableShop — ваш персональный путеводитель в мир стильной и непередаваемо уютной одежды! Наши коллекции созданы для тех, кто ценит комфорт, высокое качество и оригинальный стиль.
     </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
+    <h3 class='indexTitle-title '>Наш стиль:</h3>
+    <div class="">UnbearableShop — это не просто магазин, это искусство выражения себя через моду. Мы гордимся уникальными дизайнами и вниманием к деталям, чтобы каждая вещь стала неотъемлемой частью вашего гардероба.</div>
+    <h3 class='indexTitle-title '>Наш ассортимент:</h3>
+    <div class="">От уютных свитшотов с веселыми принтами до стильных пальто для холодных дней — в UnbearableShop вы найдете все необходимое для создания своего неповторимого образа. Мы следим за последними трендами, чтобы предложить вам самые актуальные и интересные варианты.</div>
+    <h3 class='indexTitle-title '>Почему UnbearableShop:</h3>
+    <div class="">
+        <strong>Удобство и стиль:</strong> Наши вещи созданы для того, чтобы вы чувствовали себя уютно в любой ситуации.</br>
+        <strong>Стиль и индивидуальность:</strong> Мы поощряем самовыражение и помогаем вам подчеркнуть свою уникальность через моду.</br>
+        <strong>Качество на первом месте:</strong> Мы тщательно подбираем материалы и следим за производственными процессами, чтобы предоставить вам продукцию высшего качества.</br>
     </div>
+    <h3 class='indexTitle-title '>Покупайте с удовольствием!</h3>
+    <div class="prevFooter">UnbearableShop — где каждая вещь превращается в невероятно комфортный и стильный опыт. Погружайтесь в наш мир моды и давайте создадим что-то неповторимое вместе!</div>
 </div>
