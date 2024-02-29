@@ -12,9 +12,12 @@ $this->title = 'Contact';
 ?>
 <div class="site-contact">
 
+    <h3>Корзина</h3>
+    <div class="basketBlock">
+        <div class="basket_item"></div>
+    </div>
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
                      
-        <h3>Корзина</h3>
 
     <?php endif; ?>
 </div>
