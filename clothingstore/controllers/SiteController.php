@@ -7,8 +7,11 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
+use app\models\Registation;
+use app\models\Users;
 use app\models\LoginForm;
 use app\models\ContactForm;
+
 
 class SiteController extends Controller
 {
@@ -125,4 +128,23 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionRegistration()
+    {
+        $model = new \app\models\Users();
+
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+
+        return $this->render('registration', [
+            'model' => $model,
+        ]);
+    }
+//    public function actionRegistration() {
+//        return $this->render('registration');
+//    }
 }

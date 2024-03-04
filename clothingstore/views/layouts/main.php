@@ -10,6 +10,7 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
+
 AppAsset::register($this);
 
 $this->registerCsrfMetaTags();
@@ -39,12 +40,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => 'Каталог', 'url' => ['/site/about']],
-            ['label' => 'Корзина', 'url' => ['/site/contact']],
-            ['label' => 'Круд', 'url' => ['/user']],
+            ['label' => Yii::t('common', 'Главная'), 'url' => ['/site/index']],
+            ['label' => Yii::t('common', 'Каталог'), 'url' => ['/site/about']],
+            ['label' => Yii::t('common', 'Корзина'), 'url' => ['/site/contact']],
+            ['label' => Yii::t('common', 'Круд'), 'url' => ['/user']],
+
+            // ['label' => 'Авторизация', 'url' => ['/site/egistration']],
             Yii::$app->user->isGuest
-                ? ['label' => 'Войти', 'url' => ['/site/login']]
+                ? ['label' => 'Авторизация', 'url' => ['/site/registration']]
                 : '<li class="nav-item">'
                     . Html::beginForm(['/site/logout'])
                     . Html::submitButton(
@@ -55,8 +58,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     . '</li>'
         ]
     ]);
+
     NavBar::end();
+
     ?>
+
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
@@ -71,10 +77,12 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <footer id="footer" class="mt-auto py-3 footer">
     <div class="container">
-        <a href="https://github.com/Unbearabl3" target="_blank">My github</a>
-        <a href="https://github.com/Unbearabl3" target="_blank">My linkedin</a>
-        <a href="https://leetcode.com/Unbearabl3" target="_blank">My leetcode</a>
+        <a href="https://github.com/Unbearabl3" target="_blank"><?= Yii::t('common', 'Мой гитхаб') ?></a>
+        <a href="https://github.com/Unbearabl3" target="_blank"><?= Yii::t('common', 'Мой линкедин') ?></a>
+        <a href="https://leetcode.com/Unbearabl3" target="_blank"><?= Yii::t('common', 'Мой литкод') ?></a>
+        <?= $this->render('language') ?>
     </div>
+
 </footer>
 
 <?php $this->endBody() ?>

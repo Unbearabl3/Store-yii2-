@@ -8,8 +8,8 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'language' => 'en-US',
-//    'sourceLanguages' => 'en-US',
+    'language' => 'ru',
+    'sourceLanguage' => 'ru',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -51,27 +51,23 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-
-
-
             'class' => 'codemix\localeurls\UrlManager',
             'languages' => [
-                'en'=>'en-US',
-                'ru'=>'ru-RU',
+                'en',
+                'ru',
             ],
-
             'enableDefaultLanguageUrlCode' => true,
             'rules' => [
             ],
         ],
-//        'i18n' => [
-//            'translation' => [
-//                '*' => [
-//                    'class' => 'yii\i18n\PhpMessageSource',
-//                    'basePath' => '@app/messages',
-//                ]
-//            ]
-//        ],
+        'i18n' => [
+            'translations' => [
+                'common*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                ]
+            ]
+        ],
     ],
     'params' => $params,
 ];
